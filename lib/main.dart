@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       initialBinding: AppBinding(),
-      initialRoute: AppRoutes.home,
+      initialRoute: AppRoutes.users,
       getPages: AppRoutes.pages,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -29,3 +29,31 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+/*import 'package:flutter/material.dart';
+import 'package:uitraining/screens/minimal_mobil_app/minimal_mobile_app.dart';
+
+void main() {
+  runApp(ModernMinimalListApp());
+}
+
+class ModernMinimalListApp extends StatelessWidget {
+  const ModernMinimalListApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          secondary: Color(0xff5e81ac),
+          primary: Color(0xff2e3440),
+          onSurface: Color(0xff2e3440),
+          surface: Color(0xfff5f5f5),
+        ),
+        iconTheme: IconThemeData(color: Color(0xff5e81ac)),
+      ),
+      home: MinimalMobileApp(),
+    );
+  }
+}*/

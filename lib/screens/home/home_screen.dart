@@ -51,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                         padding: EdgeInsetsGeometry.all(4),
                         child: GestureDetector(
                           onTap: () {
-                            controller.filterUsers(user);
+                            controller.moveToFilteredUsers(user);
                           },
                           child: Card(
                             elevation: 4,
